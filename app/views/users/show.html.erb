@@ -3,6 +3,7 @@
 </div>
 <div class="well">
     <h2 class="text-center">
+        <%= image_tag @user.profile.avatar.url %><br/>
         <%= @user.profile.first_name %> <%= @user.profile.last_name %><br/>
         <%= @user.profile.job_title %><br/>
         <% if current_user.plan_id == 2 %>
